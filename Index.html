@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jason's Grid Reinforcement</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .insideBorderBlack {
+            outline: 2px solid black;
+            outline-offset: -2px;
+        }
+
+        .insideBorderRed {
+            outline: 1px solid red;
+            outline-offset: -1px;
+        }
+
+        .insideBorderRedTall {
+            outline: 1px solid red;
+            outline-offset: -1px;
+            height: 110px;
+        }
+
+        .row {
+            min-height: 30px;
+            text-align: center;
+        }
+
+        .tallRow {
+            min-height: 200px;
+        }
+
+        .tp3 {
+            padding-top: 3px;
+        }
+
+        /*button {
+            width: 100%;
+        }*/
+       
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row insideBorderBlack">
+            <div id="jumbo" class="col h3">
+                <!--jumbotron-->
+                <div class="jumbotron">
+                    <h1>Bootstrap Tutorial</h1>
+                    <p>Bootstrap is the most popular HTML, CSS...</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div id="leftNav" class="col-3 insideBorderBlack">
+                <div class="row">
+                    <div class="col insideBorderRed">
+                        <button class="btn btn-sm btn btn-dark">Hello</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col insideBorderRed">R2C1R2C1</div>
+                </div>
+                <div class="row">
+                    <div class="col insideBorderRed">R2C1R3C1</div>
+                </div>
+                <div class="row">
+                    <div class="col insideBorderRed">R2C1R4C1</div>
+                </div>
+                <div class="row">
+                    <div class="col insideBorderRed">R2C1R5C1</div>
+                </div>
+            </div>
+            <div class="col-9 insideBorderBlack">
+                <div class="row tallRow">
+                    <div id="image" class="col insideBorderRed">
+                        R2C2R1C1
+                    </div>
+                    <div id="rightCol" class="col ">
+                        <div class="row">
+                            <!--<div class="col insideBorderRed">R2C2R1C2R1C1</div>-->
+                            R2C2R1C2R1C1
+
+                        </div>
+                        <div class="row">
+                            <div class="col">R2C2R1C2R1C1</div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col">R2C2R1C2R2C1</div>
+                        </div>
+                        <div class="row">
+                            <div class="col insideBorderRed">R2C2R1C2R3C1</div>
+                        </div>
+                        <div class="row">
+                            <div class="col insideBorderRedTall">R2C2R1C2R4C1</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer" class="row insideBorderBlack">
+                    <div class="col text-center h6 tp3">R2C2R2C1</div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col">
+                <button id="btn1" class="btn btn-primary">JumboTron</button>
+            </div>
+            <div class="col">
+                <button id="btn2" class="btn btn-success">Left Nav</button>
+            </div>
+            <div class="col">
+                <button id="btn3" class="btn btn-warning">Image</button>
+            </div>
+            <div class="col">
+                <button id="btn4" class="btn btn-danger">Right Col</button>
+            </div>
+            <div class="col">
+                <button id="btn5" class="btn btn-dark">Footer</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <script>
+        $("#btn1").on("click", function () {
+            let jumboColor = $("#jumbo").css("background-color");
+            if (jumboColor == "rgba(0, 0, 0, 0)")
+                $("#jumbo").css('background-color', 'yellow');
+            else
+                $("#jumbo").css('background-color', '');
+        });
+
+        $("#btn2").on("click", function () {
+            let navColor = $("#leftNav").css("background-color");
+            if (navColor == "rgba(0, 0, 0, 0)")
+                $("#leftNav").css('background-color', 'pink');
+            else
+                $("#leftNav").css('background-color', '');
+        });
+
+        $("#btn3").on("click", function () {
+            let imgColor = $("#image").css("background-color");
+            if (imgColor == "rgba(0, 0, 0, 0)")
+                $("#image").css('background-color', 'green');
+            else
+                $("#image").css('background-color', '');
+        });
+
+        $("#btn4").on("click", function () {
+            let rightCol = $("#rightCol").css("background-color");
+            if (rightCol == "rgba(0, 0, 0, 0)")
+                $("#rightCol").css('background-color', 'blue');
+            else
+                $("#rightCol").css('background-color', '');
+        });
+
+        $("#btn5").on("click", function () {
+            let footer = $("#footer").css("background-color");
+            if (footer == "rgba(0, 0, 0, 0)")
+                $("#footer").css('background-color', 'grey');
+            else
+                $("#footer").css('background-color', '');
+        });
+
+    </script>
+</body>
+</html>
