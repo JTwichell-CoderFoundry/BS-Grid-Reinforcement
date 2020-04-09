@@ -1,0 +1,5 @@
+﻿.insideBorderRed {
+    outline: 10px dashed green;
+    outline-offset: -1px;
+    background-color: yellow;
+}

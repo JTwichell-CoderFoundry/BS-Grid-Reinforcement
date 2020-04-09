@@ -1,0 +1,34 @@
+﻿.insideBorderBlack {
+    outline: 2px solid black;
+    outline-offset: -2px;
+}
+
+.insideBorderRed {
+    color: red;
+    font-size: xx-large;
+    outline: 1px solid red;
+    outline-offset: -1px;
+}
+
+.insideBorderRedTall {
+    outline: 1px solid red;
+    outline-offset: -1px;
+    height: 110px;
+}
+
+.row {
+    min-height: 30px;
+    text-align: center;
+}
+
+.tallRow {
+    min-height: 200px;
+}
+
+.tp3 {
+    padding-top: 3px;
+}
+
+button {
+    width: 100%;
+}

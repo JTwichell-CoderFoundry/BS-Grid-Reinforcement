@@ -52,8 +52,8 @@ C:\Users\jtwichell\source\repos\BS Grid Reinforcement\bin\roslyn\VBCSCompiler.ex
 C:\Users\jtwichell\source\repos\BS Grid Reinforcement\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\jtwichell\source\repos\BS Grid Reinforcement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\jtwichell\source\repos\BS Grid Reinforcement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\jtwichell\source\repos\BS Grid Reinforcement\obj\Debug\BS Grid Reinforcement.csprojAssemblyReference.cache
 C:\Users\jtwichell\source\repos\BS Grid Reinforcement\obj\Debug\BS Grid Reinforcement.csproj.CoreCompileInputs.cache
 C:\Users\jtwichell\source\repos\BS Grid Reinforcement\obj\Debug\BS Grid Reinforcement.csproj.CopyComplete
 C:\Users\jtwichell\source\repos\BS Grid Reinforcement\obj\Debug\BS Grid Reinforcement.dll
 C:\Users\jtwichell\source\repos\BS Grid Reinforcement\obj\Debug\BS Grid Reinforcement.pdb
+C:\Users\jtwichell\source\repos\BS Grid Reinforcement\obj\Debug\BS Grid Reinforcement.csprojAssemblyReference.cache

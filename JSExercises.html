@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Exercises</title>
+
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center h3">JS EXERCISES</div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <input id="num1" type="text"/>
+            </div>
+            <div class="col">
+                <input id="num2" type="text" />
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" id="btnCalc">Calculate</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p id="output"></p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+
+    <script>
+
+        //$("#btnCalc").on("click", function () {});
+
+        $("#btnCalc").on("click", function () {
+            //ParseInt is better
+            //Step 1: Get user input
+            var num1 = Number($("#num1").val());
+            var num2 = Number($("#num2").val());
+
+            //Step 2: Do something with it
+            //perform Sum and Product
+            var sum = num1 + num2;
+            var product = num1 * num2;
+
+            //Step 3: Output the results
+            //$("#output").text("The sum is: " + sum);
+            //$("#output").append("The product is: " + product);
+            //$("#output").html("The sum is: " + sum + "<br> The product is: " + product);
+            $("#output").html(`The sum is: ${sum} <br> The product is: ${product}`);
+        });
+    </script>
+
+
+
+</body>
+</html>
